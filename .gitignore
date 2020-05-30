@@ -1,0 +1,7 @@
+AXLClient/
+src/addUser/bin/
+src/addUser/obj/
+src/getPhone/bin/
+src/getPhone/obj/
+.env
+cucm.crt
