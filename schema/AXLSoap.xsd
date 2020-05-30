@@ -7682,7 +7682,7 @@ Copyright (c) 2006, 2013 Cisco Systems, Inc.
                     <xsd:documentation>If zeroHop value is false pin will be synchronized with UCxN, if synchronization is enabled for Unity Connection server and if zeroHop is true pin will not be synchronized with UCxN. This tage is supported only for updateUser api</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            <xsd:element maxOccurs="1" minOccurs="0" name="customerName" nillable="false" type="axlapi:XFkType">
+            <xsd:element maxOccurs="1" minOccurs="0" name="customerName" nillable="true" type="axlapi:XFkType">
                 <xsd:annotation>
                     <xsd:documentation>This tag should only be used by Hosted Collaboration Solution Shared Architecture deployments.</xsd:documentation>
                 </xsd:annotation>
@@ -7985,7 +7985,7 @@ Copyright (c) 2006, 2013 Cisco Systems, Inc.
                             <xsd:documentation>If zeroHop value is false pin will be synchronized with UCxN, if synchronization is enabled for Unity Connection server and if zeroHop is true pin will not be synchronized with UCxN. This tage is supported only for updateUser api</xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element maxOccurs="1" minOccurs="0" name="customerName" nillable="false" type="axlapi:XFkType">
+                    <xsd:element maxOccurs="1" minOccurs="0" name="customerName" nillable="true" type="axlapi:XFkType">
                         <xsd:annotation>
                             <xsd:documentation>This tag should only be used by Hosted Collaboration Solution Shared Architecture deployments.</xsd:documentation>
                         </xsd:annotation>

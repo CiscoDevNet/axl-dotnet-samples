@@ -97,7 +97,7 @@ The concepts and techniques shown can be extended to enable automated management
     code .
     ```
 
-* Rename `.env.example` to `.env`, and edit it to specify your CUCM address and AXL user credentials
+* Rename `.env.example` to `.env`, and edit it to specify your CUCM address and AXL user credentials (be sure to save the file!)
 
 * To run a specific sample, open the **Run** tab in VS Code, select the sample from the launch dropdown, and click the green **Start Debugging** arrow (or press **F5**)
 
