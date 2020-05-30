@@ -2,7 +2,7 @@
 
 ## Overview
 
-These C# samples demonstrates how to use the DotNet SoapCore package to read/update CUCM configurations with the AXL SOAP API.
+These C# samples demonstrate how to use the DotNet SoapCore package to read/update CUCM configurations with the AXL SOAP API.
 
 [https://developer.cisco.com/site/axl/](https://developer.cisco.com/site/axl/)
 
