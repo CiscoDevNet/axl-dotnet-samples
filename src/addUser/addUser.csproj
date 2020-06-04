@@ -15,6 +15,5 @@
     <ItemGroup>
         <Compile Include="../../AXLClient/AXLClient.cs" Link="AXLClient.cs" />
         <Compile Include="../common/Debug.cs" Link="Debug.cs" />
-
     </ItemGroup>
 </Project>
