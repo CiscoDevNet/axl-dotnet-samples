@@ -15,6 +15,8 @@ The concepts and techniques shown can be extended to enable automated management
 * CUCM 12.5
 * Visual Studio Code
 
+Try this out in the [DevNet Sandbox Collaboration 12.5 lab](https://devnetsandbox.cisco.com/RM/Diagram/Index/97563de1-5ace-4c0c-a03b-0f3eaae59d75?diagramType=Topology)
+
 ## Available samples
 
 * `getPhone.cs` - Executes a `<getPhone>` request and displays the response (`<getPhone>`)
@@ -45,7 +47,9 @@ The concepts and techniques shown can be extended to enable automated management
 
 * This project includes the AXL WSDL files for CUCM 12.5.  If you wish to use another version:
 
-    * From the CUCM admin pages, navigate to **Applications** / **Plugins** and download the "Cisco AXL Toolkit"
+    * From the CUCM admin pages, navigate to **Applications** / **Plugins**, click **Find** and download the "Cisco AXL Toolkit":
+
+        ![toolkit](assets/images/toolkit.png)
 
     * Extract the .zip file.  From the appropriate version directory under `schema/`, copy the `AXLAPI.wsdl`, `AXLEnums.xsd`, and `AXLSoap.xsd` files to the `schema/` directory under this project
 
@@ -60,10 +64,8 @@ The concepts and techniques shown can be extended to enable automated management
 * Use `dotnet-svcutil` to generate the AXL client code.  From the project root:
 
     ```bash
-    dotnet-svcutil --outputDir AXLClient  --outputFile AXLClient --namespace *,AXLClient schema/AXLAPI.wsdl
+    ~/.dotnet/tools/dotnet-svcutil --outputDir AXLClient  --outputFile AXLClient --namespace *,AXLClient schema/AXLAPI.wsdl
     ```
-
-    >If `dotnet-svcutil` is not in your system PATH, you should be able to find it in `~/.dotnet/tools/`
 
 * Install the AXL web service HTTPS certificate:
 
