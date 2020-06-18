@@ -23,6 +23,9 @@ Try this out in the [DevNet Sandbox Collaboration 12.5 lab](https://devnetsandbo
 
 * `addUser.cs` - Adds a simple end user, then deletes the user (`<addUser>`, `<removeUser>`)
 
+* `executeSqlQuery.cs` - Performs an executeSqlQuery request to retrieve Application User details,
+then prints a short report to the console.
+
 ## Getting started
 
 * From a terminal, use `git` to clone this repo to your PC, then change into the new directory:

@@ -37,6 +37,23 @@
             "logging": {
                 "moduleLoad": false // Suppress multiple 'Skipped loading symbols..' messages in debug output
             }
+        },
+        {
+            "name": "Launch executeSqlQuery",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/src/executeSqlQuery/bin/Debug/netcoreapp3.1/executeSqlQuery.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/executeSqlQuery",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false,
+            "logging": {
+                "moduleLoad": false // Suppress multiple 'Skipped loading symbols..' messages in debug output
+            }
         }
     ]
 }

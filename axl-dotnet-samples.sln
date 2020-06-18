@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getPhone", "src\getPhone\ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "addUser", "src\addUser\addUser.csproj", "{2C7A6E8E-525D-4A72-9C5C-FC77506F8591}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "executeSqlQuery", "src\executeSqlQuery\executeSqlQuery.csproj", "{B128801E-677B-4D54-962C-4F67C8C52101}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +48,22 @@ Global
 		{2C7A6E8E-525D-4A72-9C5C-FC77506F8591}.Release|x64.Build.0 = Release|Any CPU
 		{2C7A6E8E-525D-4A72-9C5C-FC77506F8591}.Release|x86.ActiveCfg = Release|Any CPU
 		{2C7A6E8E-525D-4A72-9C5C-FC77506F8591}.Release|x86.Build.0 = Release|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Debug|x64.Build.0 = Debug|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Debug|x86.Build.0 = Debug|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Release|x64.ActiveCfg = Release|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Release|x64.Build.0 = Release|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Release|x86.ActiveCfg = Release|Any CPU
+		{B128801E-677B-4D54-962C-4F67C8C52101}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{60972147-C93D-4878-AA7B-B3EB20CF693F} = {C8C6FD69-67AA-4371-9743-A2047E53C443}
 		{2C7A6E8E-525D-4A72-9C5C-FC77506F8591} = {C8C6FD69-67AA-4371-9743-A2047E53C443}
+		{B128801E-677B-4D54-962C-4F67C8C52101} = {C8C6FD69-67AA-4371-9743-A2047E53C443}
 	EndGlobalSection
 EndGlobal
