@@ -104,6 +104,9 @@ namespace executeSqlQuery
             request.sql = "select name, pkid from applicationuser";
 
             object[] rows;
+            
+            
+            executeSQLQueryResponse response = new executeSQLQueryResponse();
 
             //Try the getPhone request
             try
