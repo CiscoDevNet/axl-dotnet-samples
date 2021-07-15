@@ -91,7 +91,7 @@ namespace addUser
             HttpRequestMessageProperty requestProperty = new HttpRequestMessageProperty();
             requestProperty.Headers[ "Authorization" ] = "Basic " + encodedUserPass;
 
-            // Creating context block apparently allows attaching custom HTTP headers to the request
+            // Creating context block allows attaching custom HTTP headers to the request
             var scope = new OperationContextScope( client.InnerChannel );
             OperationContext.Current.OutgoingMessageProperties[ HttpRequestMessageProperty.Name ] = requestProperty;
 

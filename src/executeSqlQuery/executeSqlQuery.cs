@@ -99,6 +99,7 @@ namespace executeSqlQuery
 
             // Create the request object
             ExecuteSQLQueryReq request = new ExecuteSQLQueryReq();
+            executeSQLQueryResponse response;
 
             // Specify SQL statement we want to execute
             request.sql = "select name, pkid from applicationuser";
@@ -108,30 +109,31 @@ namespace executeSqlQuery
             //Try the getPhone request
             try
                 {
-                    executeSQLQueryResponse response = await client.executeSQLQueryAsync( request );
+                    response = await client.executeSQLQueryAsync( request );
+                    Console.WriteLine( $"\nexecuteSqlQuery: SUCCESS\n" );
+
+                    //Parse/print the phone's model name to the console
+
+                    // Get the rows object array from the response
+                    rows = response.executeSQLQueryResponse1.@return; 
+
+                    // Loop through each row, which consists of a XmlNode array
+                    foreach ( XmlNode[] row in rows ) {
+
+                        // From the first/second XmlNode in each row, parse the Value field from the FirstChild
+                        Console.WriteLine(
+                            "Name: " + row[ 0 ].FirstChild.Value.PadRight( 20 ) +
+                            "PKID: " + row[ 1 ].FirstChild.Value 
+                        );
+                    }
                 }
             catch ( Exception ex )
                 {
                     Console.WriteLine( $"\nError: getPhone: { ex.Message }" );
                     Environment.Exit( -1 );
                 }
-
-            Console.WriteLine( $"\nexecuteSqlQuery: SUCCESS\n" );
-
-            //Parse/print the phone's model name to the console
-
-            // Get the rows object array from the response
-            rows = response.executeSQLQueryResponse1.@return; 
-
-            // Loop through each row, which consists of a XmlNode array
-            foreach ( XmlNode[] row in rows ) {
-
-                // From the first/second XmlNode in each row, parse the Value field from the FirstChild
-                Console.WriteLine(
-                    "Name: " + row[ 0 ].FirstChild.Value.PadRight( 20 ) +
-                    "PKID: " + row[ 1 ].FirstChild.Value 
-                );
-            }
         }
-    }
-}
+        
+    } //class
+
+} //namespace
